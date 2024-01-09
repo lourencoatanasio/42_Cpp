@@ -1,3 +1,13 @@
-//
-// Created by Lourenco on 08/01/2024.
-//
+#include "Harl.hpp"
+
+int main()
+{
+    Harl harl;
+
+    harl.complain("debug");
+    harl.complain("info");
+    harl.complain("warning");
+    harl.complain("error");
+    harl.complain("something else");
+    return (0);
+}
