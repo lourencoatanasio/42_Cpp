@@ -9,7 +9,26 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="" />
+    <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module04/ex00/Animal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/Animal.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/dog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/dog.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex00/ClapTrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex00/objs/ClapTrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex00/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex01/ScavTrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex01/objs/ClapTrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex01/objs/ScavTrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex01/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex02/FragTrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex02/ScavTrap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/ClapTrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/FragTrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/ScavTrap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/main.o" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +56,14 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/ldiogo/Desktop/42_Cpp/module02/ex00",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/ldiogo/Desktop/42_Cpp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,10 +91,16 @@
       <workItem from="1704811810727" duration="3403000" />
       <workItem from="1704817555544" duration="3495000" />
       <workItem from="1705062580072" duration="1458000" />
+      <workItem from="1705078362094" duration="24000" />
+      <workItem from="1705078392941" duration="1747000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
