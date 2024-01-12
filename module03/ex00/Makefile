@@ -1,14 +1,14 @@
-SRCS		=	main.cpp Fixed.cpp \
+SRCS		=	main.cpp ClapTrap.cpp \
 
 OBJS		=	$(addprefix objs/,$(SRCS:.cpp=.o))
 
-CFLAGS		=  -std=c++98 -Wall -Wextra -Werror
-
-CC			=	c++
+CFLAGS		= 	-std=c++98 -Wall -Wextra -Werror
 
 RM			=	rm -f
 
-NAME		=	FixedPoint
+CC 			=	c++
+
+NAME		=	ClapTrap
 
 all:		$(NAME)
 

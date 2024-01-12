@@ -4,7 +4,7 @@ OBJS		=	$(addprefix objs/,$(SRCS:.cpp=.o))
 
 CFLAGS		=  -std=c++98 -Wall -Wextra -Werror
 
-CC			=	g++
+CC			=	c++
 
 RM			=	rm -f
 
