@@ -9,25 +9,35 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module04/ex00/Animal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/Animal.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/dog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/dog.hpp" afterDir="false" />
+    <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="para casa">
+      <change afterPath="$PROJECT_DIR$/module04/ex00/Cat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/Cat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/Dog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongAnimal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongAnimal.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongCat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongCat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex00/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Animal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Animal.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Brain.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Brain.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Cat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Cat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Dog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Dog.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongAnimal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongAnimal.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongCat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongCat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module04/ex01/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex00/ClapTrap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex00/objs/ClapTrap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex00/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/ScavTrap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/objs/ClapTrap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/objs/ScavTrap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/FragTrap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/ScavTrap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/ClapTrap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/FragTrap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/ScavTrap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module04/ex00/Animal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Animal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module04/ex00/Animal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Animal.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module04/ex00/dog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module04/ex00/dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Dog.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module04/ex01" />
+      <recent name="$PROJECT_DIR$/module04/ex00" />
       <recent name="$PROJECT_DIR$/module02/ex00" />
       <recent name="$PROJECT_DIR$/module02/ex03" />
       <recent name="$PROJECT_DIR$/module02/ex01" />
-      <recent name="$PROJECT_DIR$/module01/ex04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/module01/ex04/srcs" />
@@ -92,12 +103,27 @@
       <workItem from="1704817555544" duration="3495000" />
       <workItem from="1705062580072" duration="1458000" />
       <workItem from="1705078362094" duration="24000" />
-      <workItem from="1705078392941" duration="1747000" />
+      <workItem from="1705078392941" duration="2381000" />
+      <workItem from="1705321308073" duration="6429000" />
+      <workItem from="1705331930711" duration="1144000" />
     </task>
+    <task id="LOCAL-00001" summary="para casa">
+      <option name="closed" value="true" />
+      <created>1705080516483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705080516483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="para casa" />
+    <option name="LAST_COMMIT_MESSAGE" value="para casa" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
