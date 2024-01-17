@@ -18,9 +18,14 @@ int main()
 		}
 		else if (command == "SEARCH")
 		{
-			phonebook.searchContact();
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            if (phonebook.getContactCount() == 0)
+                std::cout << "Phonebook is empty." << std::endl;
+            else
+            {
+                phonebook.searchContact();
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            }
 		}
 		else if (command == "EXIT")
 		{

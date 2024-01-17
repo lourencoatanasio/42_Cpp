@@ -14,6 +14,7 @@ class PhoneBook
 		PhoneBook();
 		void addContact();
 		void searchContact() const;
+        int getContactCount();
 };
 
 #endif

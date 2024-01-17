@@ -1,4 +1,5 @@
 #include "../inc/header.hpp"
+#include "../inc/contact.hpp"
 
 void Contact::setContactInfo()
 {
@@ -24,7 +25,7 @@ void Contact::setContactInfo()
 	{
 		std::cout << "Enter nickname: ";
 		std::getline(std::cin, nickname);
-		if (nickname.length() > 0)
+		if (nickname.length() > 0 && isStringAlphaNumeric(nickname) == true)
 			break;
 		std::cout << "This is an invalid nickname" << std::endl;
 	}
@@ -33,7 +34,7 @@ void Contact::setContactInfo()
 	{
 		std::cout << "Enter phone number: ";
 		std::getline(std::cin, phoneNumber);
-		if (isStringDigit(phoneNumber) == true)
+		if (isStringDigit(phoneNumber) == true && phoneNumber.length() > 0)
 			break;
 		std::cout << "Invalid phone number. Please enter a valid phone number." << std::endl;
 	}
@@ -42,7 +43,7 @@ void Contact::setContactInfo()
 	{
 		std::cout << "Enter darkest secret: ";
 		std::getline(std::cin, darkestSecret);
-		if (darkestSecret.length() > 0)
+		if (darkestSecret.length() > 0 && isStringAlphaNumeric(darkestSecret) == true)
 			break;
 		std::cout << "This field has to be filled." << std::endl;
 	}

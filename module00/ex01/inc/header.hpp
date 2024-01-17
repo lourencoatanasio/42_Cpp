@@ -10,5 +10,6 @@
 
 bool	isStringDigit(std::string str);
 bool	isStringAlpha(std::string str);
+bool	isStringAlphaNumeric(std::string str);
 
 #endif

@@ -19,3 +19,13 @@ bool	isStringAlpha(std::string str)
 	}
 	return true;
 }
+
+bool	isStringAlphaNumeric(std::string str)
+{
+    for (long unsigned int i = 0; i < str.length(); ++i)
+    {
+        if (!std::isalnum(str[i]))
+            return false;
+    }
+    return true;
+}

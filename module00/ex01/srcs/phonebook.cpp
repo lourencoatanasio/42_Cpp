@@ -51,3 +51,8 @@ void PhoneBook::searchContact() const
 	else
 		std::cout << "Invalid index. Please enter a valid index." << std::endl;
 }
+
+int PhoneBook::getContactCount()
+{
+    return contactCount;
+}

@@ -2,7 +2,7 @@ SRCS		=	ex00.cpp \
 
 OBJS		=	$(addprefix objs/,$(SRCS:.cpp=.o))
 
-CFLAGS		= 	-g -Wall -Wextra -Werror
+CFLAGS		= 	-g -std=c++98 -Wall -Wextra -Werror
 
 CC			=	c++
 
@@ -12,7 +12,7 @@ NAME		=	megaphone
 
 all:		$(NAME)
 
-objs/%.o: %.cpp
+objs/%.o: srcs/%.cpp
 			@mkdir -p objs
 			$(CC) $(CFLAGS) -c $< -o $@
 

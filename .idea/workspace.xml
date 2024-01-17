@@ -10,34 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="para casa">
-      <change afterPath="$PROJECT_DIR$/module04/ex00/Cat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/Cat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/Dog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongAnimal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongAnimal.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongCat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/WrongCat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex00/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Animal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Animal.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Brain.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Brain.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Cat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Cat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Dog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Dog.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongAnimal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongAnimal.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongCat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/WrongCat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module04/ex01/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/Animal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Animal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/Animal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Animal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/dog.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Dog.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/42_CPP_Modules/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/42_CPP_Modules/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex00/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex01/inc/header.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex01/inc/header.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex01/inc/phonebook.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex01/inc/phonebook.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex01/srcs/contact.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex01/srcs/contact.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex01/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex01/srcs/phonebook.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex01/srcs/phonebook.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module00/ex01/srcs/utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module00/ex01/srcs/utils.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,25 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/ldiogo/Desktop/42_Cpp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ldiogo/Desktop/42_Cpp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/module04/ex01" />
@@ -106,6 +90,9 @@
       <workItem from="1705078392941" duration="2381000" />
       <workItem from="1705321308073" duration="6429000" />
       <workItem from="1705331930711" duration="1144000" />
+      <workItem from="1705505921616" duration="1583000" />
+      <workItem from="1705507515473" duration="1654000" />
+      <workItem from="1705509177950" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="para casa">
       <option name="closed" value="true" />
