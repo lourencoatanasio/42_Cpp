@@ -13,4 +13,7 @@ class Zombie
 		void	announce();
 };
 
+Zombie* newZombie(std::string name);
+void	randomChump(std::string name);
+
 #endif //MODULE00_ZOMBIE_H

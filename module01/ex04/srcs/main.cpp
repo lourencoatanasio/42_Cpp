@@ -1,6 +1,6 @@
-#include <string>
-#include <iostream>
 #include <fstream>
+#include <iostream>
+#include <string>
 #include <limits>
 
 int main(int argc, const char **argv)
@@ -34,15 +34,17 @@ int main(int argc, const char **argv)
 
     while (std::getline(file, line))
     {
-        line_pos = line.find(argv[2]);
-        if (line_pos != std::string::npos)
+        line_pos = 0;
+        while (line_pos != std::string::npos)
         {
+            line_pos = line.find(argv[2], line_pos);
+            if(line_pos == std::string::npos)
+                break;
             line.erase(line_pos, std::string(argv[2]).length());
             line.insert(line_pos, argv[3]);
-            outfile << line << std::endl;
+            line_pos += std::string(argv[3]).length();
         }
-        else
-            outfile << line << std::endl;
+        outfile << line << std::endl;
     }
     outfile.close();
     file.close();

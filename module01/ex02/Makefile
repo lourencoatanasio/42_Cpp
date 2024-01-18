@@ -1,18 +1,18 @@
-SRCS		=	main.cpp Zombie.cpp zombieHorde.cpp \
+SRCS		=	main.cpp \
 
 OBJS		=	$(addprefix objs/,$(SRCS:.cpp=.o))
 
-CFLAGS		= 	-g -std=c++98 -Wall -Wextra -Werror
+CFLAGS		=  -std=c++98 -Wall -Wextra -Werror
 
 CC			=	c++
 
 RM			=	rm -f
 
-NAME		=	zombies
+NAME		=	pointer
 
 all:		$(NAME)
 
-objs/%.o: srcs/%.cpp
+objs/%.o: %.cpp
 			@mkdir -p objs
 			$(CC) $(CFLAGS) -c $< -o $@
 

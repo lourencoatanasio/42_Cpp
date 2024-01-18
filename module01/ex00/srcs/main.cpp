@@ -1,20 +1,4 @@
-#include <iostream>
-#include "../inc/main_header.hpp"
-
-Zombie *newZombie(std::string name)
-{
-	Zombie *zombie;
-
-	zombie = new Zombie(name);
-	return (zombie);
-}
-
-void	randomChump(std::string name)
-{
-	Zombie zombie(name);
-
-	zombie.announce();
-}
+#include "../inc/Zombie.hpp"
 
 int	main()
 {

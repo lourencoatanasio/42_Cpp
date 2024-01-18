@@ -1,30 +1,4 @@
-#include <iostream>
-#include "../inc/main_header.hpp"
-
-Zombie *zombieHorde(int N, std::string name)
-{
-	Zombie *zombie;
-
-	zombie = new Zombie[N];
-	for (int i = 0; i < N; i++)
-		zombie[i].setName(name);
-	return (zombie);
-}
-
-Zombie *newZombie(std::string name)
-{
-	Zombie *zombie;
-
-	zombie = new Zombie(name);
-	return (zombie);
-}
-
-void	randomChump(std::string name)
-{
-	Zombie zombie(name);
-
-	zombie.announce();
-}
+#include "../inc/Zombie.hpp"
 
 int	main()
 {

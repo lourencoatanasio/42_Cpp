@@ -1,7 +1,3 @@
-//
-// Created by Lourenco on 08/01/2024.
-//
-
 #include "Harl.hpp"
 
 void Harl::debug(void)
@@ -31,7 +27,10 @@ void Harl::complain(std::string level)
 	for (int i = 0; i < 4; i++)
 	{
 		if (levels[i] == level)
+        {
 			(this->*functions[i])();
+            return;
+        }
 	}
 	std::cout << "Se não dizes nada do que eu sei eu não reclamo." << std::endl;
 }

@@ -1,10 +1,8 @@
-//
-// Created by Lourenco on 08/01/2024.
-//
-
 #ifndef INC_42CPP_HARL_HPP
 #define INC_42CPP_HARL_HPP
 
+#include <iostream>
+#include <string>
 
 class Harl
 {

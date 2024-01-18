@@ -15,4 +15,6 @@ class Zombie
 		void	setName(std::string name);
 };
 
+Zombie *zombieHorde(int N, std::string name);
+
 #endif //MODULE00_ZOMBIE_H
