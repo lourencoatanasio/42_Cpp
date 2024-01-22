@@ -6,6 +6,7 @@
 #define INC_42_CPP_CURE_HPP
 
 #include "AMateria.hpp"
+#include <iostream>
 
 class Cure : public AMateria
 {

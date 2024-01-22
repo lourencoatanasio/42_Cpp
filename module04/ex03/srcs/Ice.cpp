@@ -2,10 +2,11 @@
 // Created by ldiogo on 1/15/24.
 //
 
-#include "Ice.hpp"
+#include "../Inc/Ice.hpp"
 
 Ice::Ice() : AMateria("ice")
 {
+    std::cout << "Ice default constructor called" << std::endl;
 }
 
 Ice::Ice(const Ice &ice) : AMateria(ice)
@@ -18,7 +19,10 @@ Ice::~Ice()
 
 Ice &Ice::operator=(const Ice &ice)
 {
-    AMateria::operator=(ice);
+    if (this != &ice)
+    {
+        AMateria::operator=(ice);
+    }
     return (*this);
 }
 

@@ -6,6 +6,10 @@
 #define INC_42_CPP_ICHARACTER_HPP
 
 
+#include "AMateria.hpp"
+
+class AMateria;
+
 class ICharacter
 {
 public:

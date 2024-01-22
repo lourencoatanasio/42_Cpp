@@ -6,6 +6,8 @@
 #define INC_42_CPP_ICE_HPP
 
 #include "AMateria.hpp"
+#include "ICharacter.hpp"
+#include <iostream>
 
 class Ice : public AMateria
 {

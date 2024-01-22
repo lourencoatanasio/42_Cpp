@@ -2,7 +2,7 @@
 // Created by ldiogo on 1/15/24.
 //
 
-#include "Cure.hpp"
+#include "../Inc/Cure.hpp"
 
 Cure::Cure() : AMateria("cure")
 {
@@ -18,7 +18,10 @@ Cure::~Cure()
 
 Cure &Cure::operator=(const Cure &cure)
 {
-    AMateria::operator=(cure);
+    if (this != &cure)
+    {
+        AMateria::operator=(cure);
+    }
     return (*this);
 }
 
