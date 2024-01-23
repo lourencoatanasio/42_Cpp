@@ -3,18 +3,32 @@
 
 int main()
 {
-    Animal **animals = new Animal*[6];
+    Animal **animais = new Animal *[6];
+    for (int i = 0; i < 3; i++)
+    {
+        std::cout << "Dog #" << i + 1 << "============" << std::endl;
+        animais[i] = new Dog();
+    }
+    std::cout << std::endl;
+    for (int i = 3; i < 6; i++)
+    {
+        std::cout << "Cat #" << i - 2 << "============" << std::endl;
+        animais[i] = new Cat();
+    }
+    std::cout << std::endl;
     for (int i = 0; i < 6; i++)
     {
-        if (i % 2 == 0)
-            animals[i] = new Cat();
-        else
-            animals[i] = new Dog();
+        std::cout << "Deletion #" << i + 1 << "============" << std::endl;
+        delete animais[i];
     }
-    for (int i = 0; i < 6; i++)
-        animals[i]->makeSound();
-    for (int i = 0; i < 6; i++)
-        delete animals[i];
-    delete [] animals;
+    delete[] animais;
+    std::cout << std::endl;
+
+    Dog cao1;
+    {
+        std::cout << std::endl;
+        Dog cao2 = cao1;
+    }
+    std::cout << std::endl;
     return 0;
 }

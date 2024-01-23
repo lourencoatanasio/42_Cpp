@@ -16,6 +16,7 @@ protected:
         WrongAnimal(const WrongAnimal &other);
         virtual ~WrongAnimal();
         WrongAnimal &operator=(const WrongAnimal &other);
+
         void makeSound() const;
         std::string getType() const;
 };

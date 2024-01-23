@@ -6,13 +6,21 @@
 
 Character::Character(std::string const &name) : name(name)
 {
+    std::cout << "Character default constructor called" << std::endl;
     for (int i = 0; i < 4; i++)
         inventory[i] = NULL;
 }
 
-Character::Character(const Character &character)
+Character::Character(Character const &other) : name(other.name)
 {
-    *this = character;
+    std::cout << "Character " << name << " copied!" << std::endl;
+    for (int i = 0; i < 4; i++)
+    {
+        if (other.inventory[i])
+            inventory[i] = other.inventory[i]->clone();
+        else
+            inventory[i] = NULL;
+    }
 }
 
 Character::~Character()
@@ -22,12 +30,23 @@ Character::~Character()
             delete inventory[i];
 }
 
-Character &Character::operator=(const Character &character)
+Character &Character::operator=(Character const &other)
 {
-    name = character.name;
-    for (int i = 0; i < 4; i++)
-        inventory[i] = character.inventory[i];
-    return (*this);
+    if (this != &other)
+    {
+        name = other.name;
+        for (int i = 0; i < 4; i++)
+        {
+            if (inventory[i])
+                delete inventory[i];
+            if (other.inventory[i])
+                inventory[i] = other.inventory[i]->clone();
+            else
+                inventory[i] = NULL;
+        }
+    }
+    std::cout << "Character " << name << " copied!" << std::endl;
+    return *this;
 }
 
 void Character::equip(AMateria *m)
@@ -38,19 +57,26 @@ void Character::equip(AMateria *m)
             inventory[i] = m;
             return;
         }
+    std::cout << "Inventory full" << std::endl;
 }
 
 void Character::unequip(int idx)
 {
     if (idx < 0 || idx > 3)
+    {
+        std::cout << "Invalid index" << std::endl;
         return;
+    }
     inventory[idx] = NULL;
 }
 
 void Character::use(int idx, ICharacter &target)
 {
     if (idx < 0 || idx > 3 || !inventory[idx])
+    {
+        std::cout << "Invalid index" << std::endl;
         return;
+    }
     inventory[idx]->use(target);
 }
 

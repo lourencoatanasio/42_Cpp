@@ -13,4 +13,5 @@ int main()
         clapTrap1.beRepaired(10);
     }
     clapTrap1.takeDamage(10);
+    clapTrap1.beRepaired(10);
 }

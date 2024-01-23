@@ -1,5 +1,5 @@
 //
-// Created by rosal on 22/01/2024.
+// Created by ldiogo on 22//2024.
 //
 
 #include"../Inc/interfaces.hpp"
@@ -13,7 +13,7 @@ int main()
     std::cout << std::endl;
 
     // create a character and equip him with materia
-/*    ICharacter* me = new Character("me");
+    ICharacter* me = new Character("me");
     AMateria *tmp;
     tmp = src->createMateria("ice"); me->equip(tmp);
     AMateria *tmp2 = tmp;
@@ -21,6 +21,7 @@ int main()
     std::cout << std::endl;
 
     // create another character as a target
+
     ICharacter* bob = new Character("bob");
     std::cout << "me: "; me->use(0, *bob);
     std::cout << "me: "; me->use(1, *bob);
@@ -31,6 +32,7 @@ int main()
     me->unequip(0);
     delete tmp2;
     me->use(0, *bob);
+    me->use(1, *bob);
     std::cout << std::endl;
 
     // use and unequip out of range
@@ -63,9 +65,23 @@ int main()
     }
     std::cout << std::endl;
 
+    // deep copy
+    original = new Character("original");
+    {
+        IMateriaSource* src1 = new MateriaSource();
+        src1->learnMateria(new Ice());
+        AMateria *tmp1;
+        tmp1 = src1->createMateria("ice"); original->equip(tmp1);
+        Character copy(*original);
+        delete original;
+        copy.use(0, *bob);
+        delete src1;
+    }
+    std::cout << std::endl;
+
     // delete all the allocated memory
     delete bob;
     delete me;
     delete src;
-    return 0;*/
+    return 0;
 }

@@ -19,6 +19,7 @@ public:
     Character(const Character &character);
     ~Character();
     Character &operator=(const Character &character);
+
     std::string const &getName() const;
     void equip(AMateria* m);
     void unequip(int idx);

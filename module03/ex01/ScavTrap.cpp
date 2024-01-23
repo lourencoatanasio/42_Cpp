@@ -50,7 +50,7 @@ void ScavTrap::attack(const std::string &target)
 {
     if (this->hitPoints < 1)
     {
-        std::cout << this->name << " is dead" << std::endl;
+        std::cout << this->name << " cannot attack because it is dead" << std::endl;
         return;
     }
     if (this->energyPoints < 1)
@@ -64,5 +64,10 @@ void ScavTrap::attack(const std::string &target)
 
 void ScavTrap::guardGate()
 {
+    if(this->hitPoints < 1)
+    {
+        std::cout << this->name << " cannot enter Gate keeper mode because it is dead" << std::endl;
+        return;
+    }
     std::cout << this->name << " has entered in Gate keeper mode" << std::endl;
 }

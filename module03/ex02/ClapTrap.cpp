@@ -27,7 +27,7 @@ void ClapTrap::attack(const std::string &target)
 {
     if(this->hitPoints <= 0)
     {
-        std::cout << "ClapTrap " << name << " is dead!" << std::endl;
+        std::cout << "ClapTrap " << name << " cant attack because it is dead!" << std::endl;
         return;
     }
     if(this->energyPoints == 0)
@@ -56,7 +56,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 {
     if(this->hitPoints <= 0)
     {
-        std::cout << "ClapTrap " << name << " is dead!" << std::endl;
+        std::cout << "ClapTrap " << name << " cant repair because it is dead!" << std::endl;
         return;
     }
     if(this->energyPoints == 0)
