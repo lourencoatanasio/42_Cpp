@@ -33,11 +33,22 @@ int main()
 	// =========================================================================
 
 	// Bureaucrat without sufficient grade =====================================
-	Bureaucrat b1("Senhor Burocrata", 75);
-	std::cout << b1 << std::endl; // bureaucrat info
-	f2.signForm(b1);
-	std::cout << f2 << std::endl;
-	std::cout << std::endl;
+	try
+	{
+		Bureaucrat b1("Senhor Burocrata", 75);
+		std::cout << b1 << std::endl; // bureaucrat info
+		f2.signForm(b1);
+		std::cout << f2 << std::endl;
+		std::cout << std::endl;
+	}
+	catch (Form::GradeTooLowException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	catch (Form::GradeTooHighException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 	// =========================================================================
 
 	// Bureaucrat with sufficient grade ========================================
@@ -47,4 +58,6 @@ int main()
 	std::cout << f2 << std::endl;
 	std::cout << std::endl;
 	// =========================================================================
+
+
 }
