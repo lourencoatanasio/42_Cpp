@@ -14,13 +14,8 @@ public:
 	PresidentialPardonForm(const PresidentialPardonForm &other);
 	PresidentialPardonForm &operator=(const PresidentialPardonForm &other);
 	PresidentialPardonForm(const std::string &target);
-	void execute(const Bureaucrat &executor) const;
+	void execute(Bureaucrat const &executor) const;
 	std::string getTarget() const;
-	class FormNotSignedException : public std::exception {
-		const char *what() const throw() {
-			return "Form is not signed";
-		}
-	};
 };
 
 

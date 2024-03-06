@@ -13,14 +13,13 @@ int main()
 	try // sign: 145 exec: 137
 	{
 		Bureaucrat b1("Senhor executor burocrata", 137);
-		AForm *f1 = new ShrubberyCreationForm("home");
-		std::cout << *f1 << std::endl << std::endl;
-		b1.signForm(*f1);
-		b1.executeForm(*f1);
-		delete f1;
+		ShrubberyCreationForm f1("jardim");
+		std::cout << f1 << std::endl << std::endl;
+		b1.signForm(f1);
+		b1.executeForm(f1);
 		std::cout << std::endl;
 	}
-	catch (AForm::FormUnsignedException &e)
+	catch (AForm::FormNotSignedException &e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -47,7 +46,7 @@ int main()
 		delete f1;
 		std::cout << std::endl;
 	}
-	catch (AForm::FormUnsignedException &e)
+	catch (AForm::FormNotSignedException &e)
 	{
 		std::cout << e.what() << std::endl;
 	}
@@ -73,7 +72,7 @@ int main()
 		b1.executeForm(*f1);
 		delete f1;
 	}
-	catch (AForm::FormUnsignedException &e)
+	catch (AForm::FormNotSignedException &e)
 	{
 		std::cout << e.what() << std::endl;
 	}

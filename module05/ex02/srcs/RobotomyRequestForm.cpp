@@ -2,6 +2,8 @@
 // Created by ldiogo on 3/4/24.
 //
 
+#include <stdlib.h>
+#include <unistd.h>
 #include "../inc/RobotomyRequestForm.hpp"
 
 RobotomyRequestForm::~RobotomyRequestForm() {}
@@ -28,7 +30,7 @@ RobotomyRequestForm::RobotomyRequestForm(const std::string &target) : AForm()
 
 void RobotomyRequestForm::execute(const Bureaucrat &executor) const
 {
-	srand(time(NULL)); // Seed the random number generator
+	srand(time(NULL) ^ (getpid() << 16));
 	if (executor.getGrade() > this->getGradeToExecute())
 		throw AForm::GradeTooLowException();
 	if (!this->getIsSigned())

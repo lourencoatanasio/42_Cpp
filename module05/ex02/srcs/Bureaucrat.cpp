@@ -3,6 +3,7 @@
 //
 
 #include "../inc/Bureaucrat.hpp"
+#include "../inc/AForm.hpp"
 
 Bureaucrat::Bureaucrat(std::string name, int grade) : name(name) {
 	if (grade < 1)
@@ -41,6 +42,30 @@ std::string Bureaucrat::getName() const {
 
 int Bureaucrat::getGrade() const {
 	return grade;
+}
+
+void Bureaucrat::signForm(AForm &form) {
+	if (grade > form.getGradeToSign())
+		std::cout << name << " cannot sign " << form.getName() << " because his grade is too low" << std::endl;
+	else if (form.getIsSigned())
+		std::cout << name << " cannot sign " << form.getName() << " because it is already signed" << std::endl;
+	else
+	{
+		std::cout << name << " signed " << form.getName() << std::endl;
+		form.beSigned(*this);
+	}
+}
+
+void Bureaucrat::executeForm(AForm &form) {
+	if (grade > form.getGradeToExecute())
+		std::cout << name << " cannot execute " << form.getName() << " because his grade is too low" << std::endl;
+	else if (!form.getIsSigned())
+		std::cout << name << " cannot execute " << form.getName() << " because it is not signed" << std::endl;
+	else
+	{
+		std::cout << name << " executed " << form.getName() << std::endl;
+		form.execute(*this);
+	}
 }
 
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &bureaucrat) {

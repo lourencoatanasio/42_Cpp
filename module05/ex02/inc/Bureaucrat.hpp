@@ -20,6 +20,8 @@ public:
 	int getGrade() const;
 	void incrementGrade();
 	void decrementGrade();
+	void	signForm(class AForm &form);
+	void	executeForm(class AForm &form);
 	class GradeTooHighException : public std::exception {
 	public:
 		const char *what() const throw() {

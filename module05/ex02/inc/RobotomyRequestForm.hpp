@@ -14,13 +14,8 @@ public:
 	RobotomyRequestForm(const RobotomyRequestForm &other);
 	RobotomyRequestForm &operator=(const RobotomyRequestForm &other);
 	RobotomyRequestForm(const std::string &target);
-	void execute(const Bureaucrat &executor) const;
+	void execute(Bureaucrat const &executor) const;
 	std::string getTarget() const;
-	class FormNotSignedException : public std::exception {
-		const char *what() const throw() {
-			return "Form is not signed";
-		}
-	};
 };
 
 

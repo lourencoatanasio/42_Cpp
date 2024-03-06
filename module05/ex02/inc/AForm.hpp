@@ -31,17 +31,25 @@ public:
 	bool getIsSigned() const;
 	int getGradeToSign() const;
 	int getGradeToExecute() const;
-	void signForm(const Bureaucrat &bureaucrat);
+	void beSigned(const Bureaucrat &bureaucrat);
+	virtual void execute(const Bureaucrat &executor) const = 0;
 	class GradeTooHighException : public std::exception {
 	public:
 		const char *what() const throw() {
-			return "Grade is too high";
+			return "The grade is too high.";
 		}
+
 	};
 	class GradeTooLowException : public std::exception {
 	public:
 		const char *what() const throw() {
-			return "Grade is too low";
+			return "The grade is too low.";
+		}
+	};
+	class FormNotSignedException : public std::exception {
+	public:
+		const char *what() const throw() {
+			return "The form is not signed.";
 		}
 	};
 };

@@ -14,13 +14,8 @@ public:
 	ShrubberyCreationForm(const ShrubberyCreationForm &other);
 	ShrubberyCreationForm &operator=(const ShrubberyCreationForm &other);
 	ShrubberyCreationForm(const std::string &target);
-	void execute(const Bureaucrat &executor) const;
+	void execute(Bureaucrat const &executor) const;
 	std::string getTarget() const;
-	class FormNotSignedException : public std::exception {
-		const char *what() const throw() {
-			return "Form is not signed";
-		}
-	};
 	class FileNotOpenException : public std::exception {
 		const char *what() const throw() {
 			return "File could not be opened";

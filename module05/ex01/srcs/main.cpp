@@ -37,7 +37,7 @@ int main()
 	{
 		Bureaucrat b1("Senhor Burocrata", 75);
 		std::cout << b1 << std::endl; // bureaucrat info
-		f2.signForm(b1);
+		f2.beSigned(b1);
 		std::cout << f2 << std::endl;
 		std::cout << std::endl;
 	}
@@ -52,12 +52,47 @@ int main()
 	// =========================================================================
 
 	// Bureaucrat with sufficient grade ========================================
-	Bureaucrat b2("Burocrata melhor", 30);
-	std::cout << b2 << std::endl; // bureaucrat info
-	f2.signForm(b2);
-	std::cout << f2 << std::endl;
-	std::cout << std::endl;
+	try
+	{
+		Bureaucrat b2("Burocrata melhor", 30);
+		std::cout << b2 << std::endl; // bureaucrat info
+		f2.beSigned(b2);
+		std::cout << f2 << std::endl;
+		std::cout << std::endl;
+	}
+	catch (Form::GradeTooLowException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	catch (Form::GradeTooHighException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 	// =========================================================================
 
-
+	try
+	{
+		Bureaucrat b3("Burocrata bom", 100);
+		std::cout << b3 << std::endl; // bureaucrat info
+		Form f3("f3", 25, 30);
+		b3.signForm(f3);
+		std::cout << f3 << std::endl;
+		std::cout << std::endl;
+	}
+	catch (Form::GradeTooLowException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	catch (Form::GradeTooHighException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	catch (Bureaucrat::GradeTooLowException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+	catch (Bureaucrat::GradeTooHighException &e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 }
