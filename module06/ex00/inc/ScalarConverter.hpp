@@ -11,6 +11,10 @@
 #include <climits>
 #include <cfloat>
 #include <cmath>
+#include <cstdlib>
+#include <limits>
+
+const double inf = std::numeric_limits<double>::infinity();
 
 class ScalarConverter {
 private:
@@ -26,7 +30,7 @@ public:
 	static void convert(const std::string& literal);
 	class ImpossibleException : public std::exception { // Inherit publicly from std::exception
 	public:
-		const char* what() const throw() override; // Override what() method
+		const char* what() const throw(); // Override what() method
 	};
 };
 

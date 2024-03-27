@@ -10,12 +10,14 @@ ScalarConverter::ScalarConverter()
 
 ScalarConverter::ScalarConverter(const ScalarConverter &src)
 {
+	*this = src;
 }
 
 ScalarConverter::~ScalarConverter() {}
 
 ScalarConverter &ScalarConverter::operator=(const ScalarConverter &src)
 {
+	(void)src;
 	return *this;
 }
 
@@ -81,6 +83,7 @@ void ScalarConverter::convertFloat(const double &literal)
 
 void ScalarConverter::convertDouble(const double &literal)
 {
+	std::cout.precision(15);
 	try
 	{
 		if (literal > DBL_MAX || literal < -DBL_MAX)
@@ -100,16 +103,32 @@ void ScalarConverter::convertDouble(const double &literal)
 void ScalarConverter::convert(const std::string &literal)
 {
 	double d;
-	try
-	{
-		d = std::stod(literal);
-	}
-	catch (std::exception &e)
+	double inf = std::numeric_limits<double>::infinity();
+
+
+	d = std::atof(literal.c_str());
+	if (d == 0 && literal[0] != '0')
 	{
 		d = static_cast<double>(literal[0]);
 		if (literal.length() != 1 || !std::isprint(d)) {
 			throw ImpossibleException();
 		}
+	}
+	if(d == inf)
+	{
+		std::cout << "char: impossible" << std::endl;
+		std::cout << "int: impossible" << std::endl;
+		std::cout << "float: +inff" << std::endl;
+		std::cout << "double: +inf" << std::endl;
+		return;
+	}
+	if(d == -inf)
+	{
+		std::cout << "char: impossible" << std::endl;
+		std::cout << "int: impossible" << std::endl;
+		std::cout << "float: -inff" << std::endl;
+		std::cout << "double: -inf" << std::endl;
+		return;
 	}
 	ScalarConverter converter;
 	converter.convertChar(d);
