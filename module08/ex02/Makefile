@@ -1,4 +1,4 @@
-SRCS	=	main.cpp Span.cpp \
+SRCS	=	main.cpp \
 
 OBJS	=	$(addprefix objs/,$(SRCS:.cpp=.o))
 
@@ -6,7 +6,7 @@ CPPFLAGS	=	c++ -Wall -Wextra -Werror -std=c++98
 
 RM		=	rm -f
 
-NAME	=	span
+NAME	=	MutantStack
 
 all:	$(NAME)
 
