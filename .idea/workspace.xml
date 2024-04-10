@@ -9,56 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="para casa">
+    <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="module 09 now">
+      <change afterPath="$PROJECT_DIR$/module05/ex02/objs/Form.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module09/ex01/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex00/FixedPoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module02/ex00/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex00/objs/Fixed.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex00/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex01/FixedPoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module02/ex01/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex01/objs/Fixed.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex01/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex02/FixedPoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex02/objs/Fixed.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module02/ex02/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module03/ex00/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/ClapTrap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module03/ex01/ClapTrap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module03/ex01/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex01/ScavTrap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module03/ex01/ScavTrap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/ClapTrap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module03/ex02/ClapTrap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module03/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module03/ex02/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/objs/Animal.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/objs/Cat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/objs/Dog.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/objs/WrongAnimal.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/objs/WrongCat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex00/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/Brain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex01/Brain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/Cat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex01/Cat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/Dog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex01/Dog.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex01/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/objs/Animal.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/objs/Brain.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/objs/Cat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/objs/Dog.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex01/objs/main.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex02/Animal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex02/Animal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex02/Cat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex02/Cat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex02/Dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex02/Dog.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex02/WrongAnimal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex02/WrongAnimal.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex02/WrongCat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex02/WrongCat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex02/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex02/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/Inc/AMateria.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/Inc/AMateria.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/Inc/Character.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/Inc/Character.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/Inc/MateriaSource.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/Inc/MateriaSource.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/srcs/AMateria.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/srcs/AMateria.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/srcs/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/srcs/Character.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/srcs/Cure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/srcs/Cure.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/srcs/Ice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/srcs/Ice.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/srcs/MateriaSource.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/srcs/MateriaSource.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module04/ex03/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module04/ex03/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module09/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module09/ex01/srcs/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Unnamed" pattern="file[42_Cpp]:module05/ex02/*" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -85,30 +43,35 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ldiogo/Desktop/aaaa&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ldiogo/Desktop/42_Cpp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/module01/ex02" />
-      <recent name="$PROJECT_DIR$/module04/ex01" />
-      <recent name="$PROJECT_DIR$/module04/ex00" />
-      <recent name="$PROJECT_DIR$/module02/ex00" />
-      <recent name="$PROJECT_DIR$/module02/ex03" />
+      <recent name="$PROJECT_DIR$/module09" />
+      <recent name="$PROJECT_DIR$/module08/ex02" />
+      <recent name="$PROJECT_DIR$/module08/ex01" />
+      <recent name="$PROJECT_DIR$/module08/ex00" />
+      <recent name="$PROJECT_DIR$/module07/ex02" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/module01/ex04/srcs" />
+      <recent name="$PROJECT_DIR$/module09/ex01/srcs" />
+      <recent name="$PROJECT_DIR$/module09/ex01" />
+      <recent name="$PROJECT_DIR$/module08/ex02/inc" />
+      <recent name="$PROJECT_DIR$/module08/ex02" />
+      <recent name="$PROJECT_DIR$/module08/ex01/inc" />
     </key>
   </component>
   <component name="RunManager" selected="Makefile Target.fclean (2)">
@@ -182,6 +145,30 @@
       <workItem from="1706010213148" duration="631000" />
       <workItem from="1706010853381" duration="72000" />
       <workItem from="1706010934043" duration="8966000" />
+      <workItem from="1709204341749" duration="1558000" />
+      <workItem from="1709208020646" duration="1185000" />
+      <workItem from="1709213634160" duration="15000" />
+      <workItem from="1709214521423" duration="2562000" />
+      <workItem from="1709222563741" duration="1849000" />
+      <workItem from="1709562381450" duration="9707000" />
+      <workItem from="1709731395892" duration="599000" />
+      <workItem from="1709734953908" duration="590000" />
+      <workItem from="1709739705272" duration="4694000" />
+      <workItem from="1709812429129" duration="4051000" />
+      <workItem from="1710168824332" duration="687000" />
+      <workItem from="1710249919695" duration="2823000" />
+      <workItem from="1710255574846" duration="6377000" />
+      <workItem from="1710339051280" duration="3884000" />
+      <workItem from="1711024728316" duration="10044000" />
+      <workItem from="1711375680659" duration="1620000" />
+      <workItem from="1711379455135" duration="980000" />
+      <workItem from="1711382612484" duration="11000" />
+      <workItem from="1711547599005" duration="4877000" />
+      <workItem from="1712581642065" duration="1193000" />
+      <workItem from="1712585274089" duration="624000" />
+      <workItem from="1712665715016" duration="796000" />
+      <workItem from="1712678403737" duration="1227000" />
+      <workItem from="1712747562735" duration="3588000" />
     </task>
     <task id="LOCAL-00001" summary="para casa">
       <option name="closed" value="true" />
@@ -199,7 +186,79 @@
       <option name="project" value="LOCAL" />
       <updated>1705510762341</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="No CPP05 EX01">
+      <option name="closed" value="true" />
+      <created>1709224386357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709224386357</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Falta signform do 01 e o 02 ta quase">
+      <option name="closed" value="true" />
+      <created>1709573697849</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709573697849</updated>
+    </task>
+    <task id="LOCAL-00005" summary="03 agora. falta testar mais os outros">
+      <option name="closed" value="true" />
+      <created>1709748835335</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709748835335</updated>
+    </task>
+    <task id="LOCAL-00006" summary="module 06 agora">
+      <option name="closed" value="true" />
+      <created>1709830914160</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709830914160</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ex00 feito acho eu">
+      <option name="closed" value="true" />
+      <created>1710264614369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710264614369</updated>
+    </task>
+    <task id="LOCAL-00008" summary="module 07">
+      <option name="closed" value="true" />
+      <created>1710344087972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710344087972</updated>
+    </task>
+    <task id="LOCAL-00009" summary="module 08 now">
+      <option name="closed" value="true" />
+      <created>1711547622489</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711547622489</updated>
+    </task>
+    <task id="LOCAL-00010" summary="module 09 now">
+      <option name="closed" value="true" />
+      <created>1711558017272</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711558017272</updated>
+    </task>
+    <task id="LOCAL-00011" summary="module 09 now">
+      <option name="closed" value="true" />
+      <created>1712679622177</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712679622178</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -212,7 +271,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="para casa" />
-    <option name="LAST_COMMIT_MESSAGE" value="para casa" />
+    <MESSAGE value="No CPP05 EX01" />
+    <MESSAGE value="Falta signform do 01 e o 02 ta quase" />
+    <MESSAGE value="03 agora. falta testar mais os outros" />
+    <MESSAGE value="module 06 agora" />
+    <MESSAGE value="ex00 feito acho eu" />
+    <MESSAGE value="module 07" />
+    <MESSAGE value="module 08 now" />
+    <MESSAGE value="module 09 now" />
+    <option name="LAST_COMMIT_MESSAGE" value="module 09 now" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
