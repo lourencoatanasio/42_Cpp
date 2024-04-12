@@ -17,32 +17,30 @@ bool is_all_digit(const std::string &str)
 
 void   check_valid_date(const std::string &date)
 {
-    std::cout << date << std::endl;
     if(date.length() != 10)
-        throw std::invalid_argument("Invalid date format 1");
+        throw std::invalid_argument("Invalid date format");
     if (date[4] != '-' || date[7] != '-')
-        throw std::invalid_argument("Invalid date format 2");
+        throw std::invalid_argument("Invalid date format");
     if (!is_all_digit(date.substr(0, 4)) || !is_all_digit(date.substr(5, 2)) || !is_all_digit(date.substr(8, 2)))
-        throw std::invalid_argument("Invalid date format 3");
+        throw std::invalid_argument("Invalid date format");
     int day = std::atoi(date.substr(8, 2).c_str());
     int month = std::atoi(date.substr(5, 2).c_str());
     int year = std::atoi(date.substr(0, 4).c_str());
     if (day < 1 || month < 1 || month > 12 || year < 1)
-        throw std::invalid_argument("Invalid date format 4");
+        throw std::invalid_argument("Invalid date format");
     if (month == 2 && day > 29 && (year % 4 == 0))
-        throw std::invalid_argument("Invalid date format 5");
+        throw std::invalid_argument("Invalid date format");
     if (month == 2 && day > 28 && (year % 4 != 0))
-        throw std::invalid_argument("Invalid date format 6");
+        throw std::invalid_argument("Invalid date format");
     if ((month == 4 || month == 6 || month == 9 || month == 11) && day > 30)
-        throw std::invalid_argument("Invalid date format 7");
+        throw std::invalid_argument("Invalid date format");
     if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && day > 31)
-        throw std::invalid_argument("Invalid date format 8");
+        throw std::invalid_argument("Invalid date format");
     return ;
 }
 
 int    check_valid_value_source(const std::string &value)
 {
-    std::cout << value << std::endl;
     if(!is_all_digit(value))
         throw std::invalid_argument("Invalid value");
     float val = std::atof(value.c_str());
@@ -53,14 +51,15 @@ int    check_valid_value_source(const std::string &value)
 
 int    check_valid_value(const std::string &value)
 {
-    std::cout << value << std::endl;
-    if(!is_all_digit(value))
-        throw std::invalid_argument("Invalid value");
-    float val = std::atof(value.c_str());
+    if(value[0] != ' ')
+        throw std::invalid_argument("Invalid value format");
+    if(!is_all_digit(value.substr(1, value.size() - 1)))
+        throw std::invalid_argument("Invalid value format");
+    float val = std::atof(value.substr(1, value.size() - 1).c_str());
     if (val < 0)
-        throw std::invalid_argument("Invalid value");
+        throw std::invalid_argument("Invalid value format");
     else if (val > 1000)
-        throw std::invalid_argument("Invalid value");
+        throw std::invalid_argument("Invalid value format");
     return 0;
 }
 
@@ -74,7 +73,7 @@ bool    check_pipe(std::string &line)
             pipe_count++;
     }
     if (pipe_count != 1)
-        throw std::invalid_argument("Invalid input file");
+        throw std::invalid_argument("Invalid input line");
     return true;
 }
 
@@ -132,6 +131,7 @@ std::map<std::string, float> get_value_input(const std::string &fileName, std::m
             std::cerr << e.what() << std::endl;
             return lines;
         }
+        lines[line.substr(0, 10)] = std::atof(line.substr(11, line.size() - 11).c_str());
     }
     file.close();
     return lines;
@@ -142,10 +142,32 @@ BitcoinExchange::BitcoinExchange()
     try
     {
         values = get_value_input("data.csv", values);
+//        for(std::map<std::string, float>::iterator it = values.begin(); it != values.end(); it++)
+//        {
+//            std::cout << it->first << " " << it->second << std::endl;
+//        }
     }
     catch (std::exception &e)
     {
         std::cerr << e.what() << std::endl;
+    }
+}
+
+void    BitcoinExchange::makeExchange(const std::string &date, const std::string &value)
+{
+    long double val = std::atof(value.c_str());
+    std::map <std::string, float>::iterator it = values.find(date);
+    std::cout << std::fixed << std::setprecision(2);
+    if(it != values.end())
+    {
+        std::cout << date << "  " << val << "btc =|=|=> " << it->second * val << " dinheiro" << std::endl;
+    }
+    else
+    {
+        it = this->values.lower_bound(date + " ");
+        if (it != this->values.begin())
+            it--;
+        std::cout << date << "  " << val << "btc =|=|=> " << it->second * val << " dinheiro" << std::endl;
     }
 }
 
