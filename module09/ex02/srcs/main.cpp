@@ -13,6 +13,12 @@ long long jacobsthal(int n) {
         return jacobsthal(n - 1) + 2 * jacobsthal(n - 2);
 }
 
+long long getTimeMs() {
+    timeval currentTime;
+    gettimeofday(&currentTime, NULL);
+    return currentTime.tv_sec * 1000000 + currentTime.tv_usec;
+}
+
 
 int main(int argc, char **argv)
 {
@@ -24,7 +30,16 @@ int main(int argc, char **argv)
     try
     {
         PmergeMe pmergeMe(argv);
-        pmergeMe.mergeMe();
+        pmergeMe.N = getTimeMs();
+        std::cout << "Before: ";
+        pmergeMe.print_numbers();
+        pmergeMe.mergeMeV();
+        std::cout << "After: ";
+        pmergeMe.print_numbers();
+        std::cout << "Time to process a range with " << pmergeMe.get_size() << " elements with std::vector:    " << getTimeMs() - pmergeMe.N << " us." << std::endl;
+        pmergeMe.N = getTimeMs();
+        pmergeMe.mergeMeDQ();
+        std::cout << "Time to process a range with " << pmergeMe.get_size() << " elements with std::deque:    " << getTimeMs() - pmergeMe.N << " us." << std::endl;
     }
     catch (const std::exception &e)
     {

@@ -6,7 +6,6 @@
 
 void    PmergeMe::print_numbers()
 {
-    std::cout << "numbers: ";
     for (size_t i = 0; i < numbers.size(); i++)
     {
         std::cout << numbers[i];
@@ -14,14 +13,10 @@ void    PmergeMe::print_numbers()
         {
             std::cout << " ";
         }
-    }
-    std::cout << std::endl;
-    for (size_t i = 0; i < numbers1.size(); i++)
-    {
-        std::cout << numbers1[i];
-        if (i + 1 < numbers1.size())
+        if(i > 3)
         {
-            std::cout << " ";
+            std::cout << "[...]";
+            break;
         }
     }
     std::cout << std::endl;
@@ -34,21 +29,27 @@ void    PmergeMe::swap(int &a, int &b)
     b = tmp;
 }
 
-void    PmergeMe::swapPairs(std::vector<int> &v)
+int PmergeMe::get_size()
 {
-    for (size_t i = 0; i < v.size() - 2; i++)
+    return numbers.size();
+}
+
+template <typename T>
+void PmergeMe::swapPairs(T &container, size_t size)
+{
+    if (size >= container.size())
+        return ;
+    for (size_t i = 1; i < container.size() - 1; i += 2)
     {
-        if (i % 2 == 0)
+        if (container[i] > container[size])
         {
-            if(v[i + 1] > v[i + 3])
-            {
-                swap(v[i], v[i + 2]);
-                swap(v[i + 1], v[i + 3]);
-                i = -1;
-            }
+            std::swap(container[i], container[size]);
+            std::swap(container[i - 1], container[size - 1]);
         }
     }
+    swapPairs(container, size + 2);
 }
+
 
 bool    PmergeMe::is_all_digit(const std::string &str) {
     for (size_t i = 0; i < str.size(); i++)
@@ -60,74 +61,83 @@ bool    PmergeMe::is_all_digit(const std::string &str) {
     return true;
 }
 
-void    PmergeMe::separate(std::vector<int> &v, std::vector<int> &v1, std::vector<int> &v2)
+template <typename T>
+void PmergeMe::separate(T &container, T &container1, T &container2)
 {
-    for(size_t i = 0; i < v.size(); i++)
+    for(size_t i = 0; i < container.size(); i++)
     {
         if(i % 2 != 0)
-            v1.push_back(v[i]);
+            container1.push_back(container[i]);
         else
-            v2.push_back(v[i]);
+            container2.push_back(container[i]);
     }
-    v = v1;
+    container = container1;
 }
 
-void    PmergeMe::merge()
+void    PmergeMe::mergeV()
 {
-    std::cout << "Before merge: ";
-    print_numbers();
     int numbers_size = numbers.size();
     int jacob_order = 2;
     int smaller_index = 0;
     int index;
 
-    std::cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
-    std::cout << std::endl;
     while (numbers.size() < numbers1.size() + numbers_size)
     {
         index = jacobsthal(jacob_order) - 1;
-        std::cout << "index: " << index << std::endl;
+        if(index > (int)numbers1.size() - 1)
+            index = numbers1.size() - 1;
         size_t insertion = insertion_index(this->numbers, this->numbers1[index]);
-        std::cout << "insertion: " << insertion << std::endl;
         numbers.insert(this->numbers.begin() + insertion, this->numbers1[index]);
         index--;
         while (index > smaller_index)
         {
-            std::cout << "index: " << index << std::endl;
             size_t insertion = insertion_index(this->numbers, this->numbers1[index]);
-            std::cout << "insertion: " << insertion << std::endl;
             numbers.insert(this->numbers.begin() + insertion, this->numbers1[index]);
-            print_numbers();
-            std::cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
             index--;
         }
         smaller_index = jacobsthal(jacob_order) - 1;
-        print_numbers();
-        std::cout << "smaller_index: " << smaller_index << std::endl;
-        std::cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++" << std::endl;
         jacob_order++;
     }
-    std::cout << std::endl << "After merge: ";
-    print_numbers();
 }
 
-size_t PmergeMe::insertion_index(std::vector<int> &v, int target)
+void    PmergeMe::mergeDQ()
 {
-    size_t low = 0;
-    size_t high = v.size() - 1;
+    int numbers_size = dq.size();
+    int jacob_order = 2;
+    int smaller_index = 0;
+    int index;
 
-    for(size_t i = 0; i < v.size(); i++)
+    while (dq.size() < dq1.size() + numbers_size)
     {
-        std::cout << v[i] << " ";
+        index = jacobsthal(jacob_order) - 1;
+        if(index > (int)dq1.size() - 1)
+            index = dq1.size() - 1;
+        size_t insertion = insertion_index(this->dq, this->dq1[index]);
+        dq.insert(this->dq.begin() + insertion, this->dq1[index]);
+        index--;
+        while (index > smaller_index)
+        {
+            size_t insertion = insertion_index(this->dq, this->dq1[index]);
+            dq.insert(this->dq.begin() + insertion, this->dq1[index]);
+            index--;
+        }
+        smaller_index = jacobsthal(jacob_order) - 1;
+        jacob_order++;
     }
-    std::cout << std::endl;
-    std::cout << "target: " << target << std::endl;
-    while (low < high)
+}
+
+template <typename T>
+size_t PmergeMe::insertion_index(T &container, int target)
+{
+    int low = 0;
+    int high = container.size() - 1;
+
+    while (low <= high)
     {
         int mid = low + (high - low) / 2;
-        if (v[mid] == target)
+        if (container[mid] == target)
             return mid;
-        else if (v[mid] > target)
+        else if (container[mid] > target)
             high = mid - 1;
         else
             low = mid + 1;
@@ -135,10 +145,33 @@ size_t PmergeMe::insertion_index(std::vector<int> &v, int target)
     return low;
 }
 
-void    PmergeMe::mergeMe()
+void    PmergeMe::mergeMeDQ()
 {
-    std::cout << "Before mergeMe: ";
-    print_numbers();
+    int odd = 0;
+    for(size_t i = 0; i < dq.size(); i++)
+    {
+        if(i % 2 != 0)
+        {
+            if(dq[i] < dq[i - 1])
+                swap(dq[i], dq[i - 1]);
+        }
+    }
+    if(dq.size() % 2 != 0)
+    {
+        odd = dq[dq.size() - 1];
+        dq.pop_back();
+    }
+    swapPairs(dq, 1);
+    std::deque<int> tmp;
+    separate(dq, tmp, dq1);
+    if(odd != 0)
+        dq1.push_back(odd);
+    mergeDQ();
+}
+
+void    PmergeMe::mergeMeV()
+{
+    int odd = 0;
     for(size_t i = 0; i < numbers.size(); i++)
     {
         if(i % 2 != 0)
@@ -147,12 +180,17 @@ void    PmergeMe::mergeMe()
                 swap(numbers[i], numbers[i - 1]);
         }
     }
-    swapPairs(numbers);
+    if(numbers.size() % 2 != 0)
+    {
+        odd = numbers[numbers.size() - 1];
+        numbers.pop_back();
+    }
+    swapPairs(numbers, 1);
     std::vector<int> tmp;
     separate(numbers, tmp, numbers1);
-    merge();
-    std::cout << std::endl << "After merge: ";
-    print_numbers();
+    if(odd != 0)
+        numbers1.push_back(odd);
+    mergeV();
 }
 
 PmergeMe::PmergeMe()
@@ -169,6 +207,7 @@ PmergeMe::PmergeMe(char **argv)
             throw std::invalid_argument("Invalid argument : " + std::string(argv[i]));
         }
         numbers.push_back(std::atoi(argv[i]));
+        dq.push_back(std::atoi(argv[i]));
     }
 }
 
@@ -176,13 +215,19 @@ PmergeMe::~PmergeMe()
 {
 }
 
-PmergeMe::PmergeMe(const PmergeMe &other)
+PmergeMe::PmergeMe(const PmergeMe &other) : numbers(other.numbers), numbers1(other.numbers1), dq(other.dq), dq1(other.dq1)
 {
     (void)other;
 }
 
 PmergeMe &PmergeMe::operator=(const PmergeMe &other)
 {
-    (void)other;
+    if(this != &other)
+    {
+        numbers = other.numbers;
+        numbers1 = other.numbers1;
+        dq = other.dq;
+        dq1 = other.dq1;
+    }
     return *this;
 }

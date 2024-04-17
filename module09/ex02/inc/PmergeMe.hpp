@@ -11,26 +11,41 @@
 #include <string>
 #include <exception>
 #include <cstdlib>
+#include <cmath>
+#include <sys/time.h>
 
 class PmergeMe
 {
     private:
         std::vector<int> numbers;
         std::vector<int> numbers1;
+        std::deque<int> dq;
+        std::deque<int> dq1;
     public:
+        long long N;
         PmergeMe();
         PmergeMe(char **argv);
         ~PmergeMe();
         PmergeMe(const PmergeMe &other);
         PmergeMe &operator=(const PmergeMe &other);
         static bool is_all_digit(const std::string &str);
-        void merge();
-        void mergeMe();
+        void mergeV();
+        void mergeDQ();
+        void mergeMeV();
+        void mergeMeDQ();
         void    print_numbers();
         void    swap(int &a, int &b);
-        void    swapPairs(std::vector<int> &v);
-        void    separate(std::vector<int> &v, std::vector<int> &v1, std::vector<int> &v2);
-        size_t insertion_index(std::vector<int> &v, int target);
+        int get_size();
+
+        template<typename T>
+        void    swapPairs(T &container, size_t size);
+
+        template<typename T>
+        void    separate(T &container, T &container1, T &container2);
+
+        template <typename T>
+        size_t insertion_index(T &container, int target);
+
         class error : public std::exception
         {
             public:
@@ -39,6 +54,7 @@ class PmergeMe
 };
 
 long long jacobsthal(int n);
+long long getTimeMs();
 
 
 #endif //INC_42_CPP_PMERGEME_HPP
