@@ -6,6 +6,8 @@
 #include <string>
 #include <stack>
 #include <sstream>
+#include <cctype>
+#include <cstdlib>
 
 bool is_all_digit(const char *str)
 {
@@ -28,12 +30,37 @@ bool is_operator(char c)
     return true;
 }
 
+int checker(char **argv)
+{
+    std::stringstream ss(argv[1]);
+    std::string str;
+    int number = 0;
+    int oper = 0;
+    while(ss >> str)
+    {
+        if (!is_all_digit(str.c_str()) || (is_operator(str[0]) && str.size() != 1))
+            return 1;
+        if (is_operator(str[0]))
+            oper++;
+        else
+            number++;
+    }
+    if (number - oper != 1)
+        return 1;
+    return 0;
+}
+
 int main(int argc, char **argv)
 {
+    (void)argc;
     std::stack<int> stack;
-    std::stringstream ss = std::stringstream(argv[1]);
+    std::stringstream ss(argv[1]);
     std::string str;
-    ss = std::stringstream(argv[1]);
+    if(checker(argv))
+    {
+        std::cout << "Invalid argument" << std::endl;
+        return 1;
+    }
     while(ss >> str)
     {
         if(is_operator(str[0]))
