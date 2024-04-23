@@ -44,6 +44,16 @@ bool isInf(double x) {
 	return x == HUGE_VAL || x == -HUGE_VAL;
 }
 
+bool isPrint (char c) {
+    return c >= 32 && c <= 126;
+}
+
+bool isDigit(char c) {
+    if(c >= '0' && c <= '9')
+        return true;
+    return false;
+}
+
 void ScalarConverter::convertInt(const double &literal)
 {
 	try
@@ -100,17 +110,42 @@ void ScalarConverter::convertDouble(const double &literal)
 	}
 }
 
+int check_input(const std::string &literal)
+{
+    int dot = 0;
+    int flag = 0;
+
+    if(literal == "nan" || literal == "-inff" || literal == "+inff"
+    || literal == "inff" || literal == "-inf" || literal == "+inf" || literal == "inf")
+        return 0;
+    for(size_t i = 0; i < literal.length(); i++)
+    {
+        if(literal[i] == '.' || literal[i] == 'f' || literal[i] == '+' || literal[i] == '-')
+        {
+            dot++;
+            flag++;
+        }
+        if(!isDigit(literal[i]) && literal[i] != '.' && literal[i] != 'f' && i > 0)
+            return 1;
+    }
+    if(dot > 1 || flag > 1)
+        return 1;
+    return 0;
+}
+
 void ScalarConverter::convert(const std::string &literal)
 {
 	double d;
 	double inf = std::numeric_limits<double>::infinity();
 
-
+    if(check_input(literal)) {
+        throw ImpossibleException();
+    }
 	d = std::atof(literal.c_str());
 	if (d == 0 && literal[0] != '0')
 	{
 		d = static_cast<double>(literal[0]);
-		if (literal.length() != 1 || !std::isprint(d)) {
+		if (literal.length() != 1 || !isPrint(d)) {
 			throw ImpossibleException();
 		}
 	}

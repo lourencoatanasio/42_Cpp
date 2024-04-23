@@ -10,10 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f93a8d6e-3d97-4b2d-a1ed-617afe2cd6b4" name="Changes" comment="module 09 now">
-      <change afterPath="$PROJECT_DIR$/module05/ex02/objs/Form.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module09/ex01/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module07/ex01/srcs/iter.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module09/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module09/ex01/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex00/inc/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex00/inc/Bureaucrat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/inc/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex01/inc/Bureaucrat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/objs/Bureaucrat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/objs/Form.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/signforms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex01/srcs/Bureaucrat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex01/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/inc/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex02/inc/Bureaucrat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/inc/ShrubberyCreationForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex02/inc/ShrubberyCreationForm.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/jardim_shrubbery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex02/srcs/Bureaucrat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/srcs/PresidentialPardonForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex02/srcs/PresidentialPardonForm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/srcs/RobotomyRequestForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex02/srcs/RobotomyRequestForm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/srcs/ShrubberyCreationForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex02/srcs/ShrubberyCreationForm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex02/target3_shrubbery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex03/home_shrubbery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex03/inc/ShrubberyCreationForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex03/inc/ShrubberyCreationForm.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module05/ex03/srcs/ShrubberyCreationForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module05/ex03/srcs/ShrubberyCreationForm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex00/srcs/ScalarConverter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module06/ex00/srcs/ScalarConverter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex01/objs/Serializer.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex01/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex01/scalarConverter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex02/indentify" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex02/objs/Indentifiers.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module06/ex02/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module07/ex00/inc/main.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module07/ex00/inc/whatever.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module07/ex00/objs/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module07/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module07/ex00/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module07/ex00/templates" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module07/ex02/srcs/Array.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module07/ex02/srcs/Array.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module08/ex00/inc/easyfind.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/module08/ex00/inc/easyfind.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module08/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module08/ex00/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module08/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module08/ex01/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module09/ex00/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module09/ex00/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module09/ex00/srcs/BitcoinExchange.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module09/ex00/srcs/BitcoinExchange.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module09/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/module09/ex00/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module09/ex01/objs/BitcoinExchange.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module09/ex01/objs/main.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,30 +85,30 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ldiogo/Desktop/42_Cpp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ldiogo/42_Cpp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module05/ex03/srcs" />
+      <recent name="$PROJECT_DIR$/module09/ex02" />
       <recent name="$PROJECT_DIR$/module09" />
       <recent name="$PROJECT_DIR$/module08/ex02" />
       <recent name="$PROJECT_DIR$/module08/ex01" />
-      <recent name="$PROJECT_DIR$/module08/ex00" />
-      <recent name="$PROJECT_DIR$/module07/ex02" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module09/ex02/inc" />
       <recent name="$PROJECT_DIR$/module09/ex01/srcs" />
       <recent name="$PROJECT_DIR$/module09/ex01" />
       <recent name="$PROJECT_DIR$/module08/ex02/inc" />
       <recent name="$PROJECT_DIR$/module08/ex02" />
-      <recent name="$PROJECT_DIR$/module08/ex01/inc" />
     </key>
   </component>
   <component name="RunManager" selected="Makefile Target.fclean (2)">
@@ -169,6 +206,17 @@
       <workItem from="1712665715016" duration="796000" />
       <workItem from="1712678403737" duration="1227000" />
       <workItem from="1712747562735" duration="3588000" />
+      <workItem from="1712760598906" duration="830000" />
+      <workItem from="1712762257981" duration="933000" />
+      <workItem from="1712840240967" duration="10492000" />
+      <workItem from="1712914704342" duration="5847000" />
+      <workItem from="1712925097248" duration="6456000" />
+      <workItem from="1713261034948" duration="11629000" />
+      <workItem from="1713279622446" duration="3798000" />
+      <workItem from="1713354537658" duration="9778000" />
+      <workItem from="1713434488868" duration="4141000" />
+      <workItem from="1713865651713" duration="746000" />
+      <workItem from="1713867197536" duration="4096000" />
     </task>
     <task id="LOCAL-00001" summary="para casa">
       <option name="closed" value="true" />
@@ -258,7 +306,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712679622178</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="module 09 now">
+      <option name="closed" value="true" />
+      <created>1712851340960</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712851340960</updated>
+    </task>
+    <task id="LOCAL-00013" summary="module 09 now">
+      <option name="closed" value="true" />
+      <created>1712937041829</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712937041829</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">

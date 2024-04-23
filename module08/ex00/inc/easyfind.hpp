@@ -11,4 +11,12 @@
 #include <algorithm>
 #include <deque>
 
+template <typename T>
+int easyfind(T &container, int value) {
+    typename T::iterator it = std::find(container.begin(), container.end(), value);
+    if (it == container.end())
+        throw std::exception();
+    return *it;
+}
+
 #endif //INC_42_CPP_EASYFIND_HPP

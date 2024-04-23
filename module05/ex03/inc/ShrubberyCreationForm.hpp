@@ -6,6 +6,8 @@
 #define INC_42_CPP_SHRUBBERYCREATIONFORM_HPP
 
 #include "AForm.hpp"
+#include <stdlib.h>
+#include <unistd.h>
 
 class ShrubberyCreationForm : public AForm {
 public:

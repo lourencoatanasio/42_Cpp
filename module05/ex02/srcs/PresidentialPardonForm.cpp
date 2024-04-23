@@ -4,6 +4,8 @@
 
 #include "../inc/PresidentialPardonForm.hpp"
 
+PresidentialPardonForm::PresidentialPardonForm() {}
+
 PresidentialPardonForm::~PresidentialPardonForm() {}
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &other)

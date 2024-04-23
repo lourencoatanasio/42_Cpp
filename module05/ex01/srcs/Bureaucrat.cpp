@@ -13,6 +13,8 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : name(name) {
 	this->grade = grade;
 }
 
+Bureaucrat::Bureaucrat() : name("default"), grade(150) {}
+
 Bureaucrat::Bureaucrat(const Bureaucrat &bureaucrat) : name(bureaucrat.name), grade(bureaucrat.grade) {}
 
 Bureaucrat::~Bureaucrat() {}

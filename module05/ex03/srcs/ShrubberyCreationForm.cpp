@@ -2,8 +2,10 @@
 // Created by ldiogo on 3/4/24.
 //
 
-#include <fstream> // Add this line to include the necessary header file
 #include "../inc/ShrubberyCreationForm.hpp"
+
+
+ShrubberyCreationForm::ShrubberyCreationForm() {}
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {}
 
@@ -39,18 +41,34 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const {
 		throw ShrubberyCreationForm::FileNotOpenException(); // Throw exception if file cannot be opened
 	}
 
+    srand(time(NULL) ^ (getpid() << 16));
+
+    if(rand() % 2 == 0) {
+        file << "      /\\      " << std::endl;
+        file << "     /\\*\\     " << std::endl;
+        file << "    /\\O\\*\\    " << std::endl;
+        file << "   /*/\\/\\/\\   " << std::endl;
+        file << "  /\\O\\/\\*\\/\\  " << std::endl;
+        file << " /\\*\\/\\*\\/\\/\\ " << std::endl;
+        file << "/\\O\\/\\/*/\\/O/\\" << std::endl;
+        file << "      ||      " << std::endl;
+        file << "      ||      " << std::endl;
+        file << "      ||      " << std::endl;
+        file << std::endl;
+    } else {
+        file << "       ^       " << std::endl;
+        file << "      ^^^      " << std::endl;
+        file << "     ^^^^^     " << std::endl;
+        file << "    ^^^^^^^    " << std::endl;
+        file << "   ^^^^^^^^^   " << std::endl;
+        file << "  ^^^^^^^^^^^  " << std::endl;
+        file << " ^^^^^^^^^^^^^ " << std::endl;
+        file << "^^^^^^^^^^^^^^^" << std::endl;
+        file << "      |||      " << std::endl;
+        file << "      |||      " << std::endl;
+        file << std::endl;
+    }
 	// Write to file
-	file << "      /\\      " << std::endl;
-	file << "     /\\*\\     " << std::endl;
-	file << "    /\\O\\*\\    " << std::endl;
-	file << "   /*/\\/\\/\\   " << std::endl;
-	file << "  /\\O\\/\\*\\/\\  " << std::endl;
-	file << " /\\*\\/\\*\\/\\/\\ " << std::endl;
-	file << "/\\O\\/\\/*/\\/O/\\" << std::endl;
-	file << "      ||      " << std::endl;
-	file << "      ||      " << std::endl;
-	file << "      ||      " << std::endl;
-	file << std::endl;
 
 	file.close(); // Close file
 }

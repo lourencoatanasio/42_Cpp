@@ -6,7 +6,7 @@
 #include <ctime>
 
 int main() {
-	try {
+	try { // This will work
 		std::srand(static_cast<unsigned int>(std::time(NULL)));
 		std::vector<int> v;
 		for (int i = 0; i < 1000; i++) {
@@ -22,12 +22,11 @@ int main() {
 		std::cerr << e.what() << std::endl;
 	}
 
-	try {
+	try { // This will throw an exception
 		std::srand(static_cast<unsigned int>(std::time(NULL)));
 		Span span(1000);
 		for (int i = 0; i < 10000; i++) {
 			span.addNumber(std::rand() % std::rand() % std::rand() * (std::rand() % 2 ? 1 : -1));
-			std::cout << "Added number " << span.getNumber(i) << std::endl;
 		}
 		std::cout << "Shortest span: " << span.shortestSpan() << std::endl;
 		std::cout << "Longest span: " << span.longestSpan() << std::endl;

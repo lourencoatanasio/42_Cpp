@@ -37,7 +37,7 @@ int main()
 	{
 		Bureaucrat b1("Senhor Burocrata", 75);
 		std::cout << b1 << std::endl; // bureaucrat info
-		f2.beSigned(b1);
+        b1.signForm(f2);
 		std::cout << f2 << std::endl;
 		std::cout << std::endl;
 	}
@@ -72,7 +72,7 @@ int main()
 
 	try
 	{
-		Bureaucrat b3("Burocrata bom", 100);
+		Bureaucrat b3("Burocrata bom", 25);
 		std::cout << b3 << std::endl; // bureaucrat info
 		Form f3("f3", 25, 30);
 		b3.signForm(f3);

@@ -43,8 +43,12 @@ int    check_valid_value_source(const std::string &value)
 {
     if(!is_all_digit(value))
         throw std::invalid_argument("Invalid value");
+    if(!isdigit(value[0]))
+        throw std::invalid_argument("Invalid value");
     float val = std::atof(value.c_str());
     if (val < 0)
+        throw std::invalid_argument("Invalid value");
+    else if (val == 0 && value[0] != '0')
         throw std::invalid_argument("Invalid value");
     return 0;
 }
@@ -107,6 +111,10 @@ bool    check_comma(std::string &line)
     {
         if (line[i] == ',')
             comma_count++;
+        if (i == line.size() - 1 && line[i] == ',')
+            throw std::invalid_argument("Invalid input file");
+        if(i == line.size() - 1 && line[i] == '.')
+            throw std::invalid_argument("Invalid input file");
     }
     if (comma_count != 1)
         throw std::invalid_argument("Invalid input file");
@@ -128,8 +136,7 @@ std::map<std::string, float> get_value_input(const std::string &fileName, std::m
             check_valid_date(line.substr(0, 10));
             check_valid_value_source(line.substr(11, line.size() - 11));
         } catch (std::exception &e) {
-            std::cerr << e.what() << std::endl;
-            return lines;
+            throw std::invalid_argument("Invalid input file");
         }
         lines[line.substr(0, 10)] = std::atof(line.substr(11, line.size() - 11).c_str());
     }
@@ -149,7 +156,7 @@ BitcoinExchange::BitcoinExchange()
     }
     catch (std::exception &e)
     {
-        std::cerr << e.what() << std::endl;
+        throw std::invalid_argument("Invalid input file");
     }
 }
 

@@ -11,6 +11,9 @@
 
 template <typename T>
 class Array {
+private:
+    T *array;
+    unsigned int size;
 public:
 	Array() : array(NULL), size(0) {}
 	Array(unsigned int n) : size(n) {
@@ -50,9 +53,6 @@ public:
 	const char *what() const throw() {
 		return "Index out of bounds";
 	}
-private:
-	T *array;
-	unsigned int size;
 };
 
 
