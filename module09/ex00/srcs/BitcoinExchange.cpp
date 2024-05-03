@@ -75,6 +75,8 @@ bool    check_pipe(std::string &line)
     {
         if (line[i] == '|')
             pipe_count++;
+        if (i == line.size() - 2 && line[i] == '|')
+            throw std::invalid_argument("Invalid input line");
     }
     if (pipe_count != 1)
         throw std::invalid_argument("Invalid input line");

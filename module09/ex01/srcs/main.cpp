@@ -16,7 +16,6 @@ bool is_all_digit(const char *str)
     while(str[++i] != '\0')
     {
         if (!std::isdigit(str[i]) && str[i] != '+' && str[i] != '-' && str[i] != '*' && str[i] != '/') {
-            std::cout << str << std::endl;
             return false;
         }
     }
@@ -52,7 +51,11 @@ int checker(char **argv)
 
 int main(int argc, char **argv)
 {
-    (void)argc;
+    if(argc != 2)
+    {
+        std::cout << "Usage: " << argv[0] << " <expression>" << std::endl;
+        return 1;
+    }
     std::stack<int> stack;
     std::stringstream ss(argv[1]);
     std::string str;
